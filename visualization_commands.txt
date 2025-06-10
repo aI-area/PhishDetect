@@ -1,0 +1,29 @@
+Commands to generate visualizations using visualization.py
+
+Handcrafted Feature Importance Plot
+python visualization.py --viz_type handcrafted_feature_importance --data_dir "artifacts"
+
+N-gram Feature Importance Plot
+python visualization.py --viz_type character_importance --data_dir "artifacts"
+
+SHAP Summary Plot
+python visualization.py --viz_type shap_summary_plot --data_dir "artifacts"
+
+SHAP Decision Plot
+python visualization.py --viz_type shap_decision_plot --data_dir "artifacts"
+
+SHAP Decision Plot for Specific Index (e.g., instance_idx 1)
+python visualization.py --viz_type shap_decision_plot --data_dir "artifacts" --instance_idx 1
+
+SHAP Waterfall Plot
+python visualization.py --viz_type shap_waterfall_plot --data_dir "artifacts"
+
+SHAP Waterfall Plot for Specific Index (e.g., instance_idx 1)
+python visualization.py --viz_type shap_decision_plot --data_dir "artifacts" --instance_idx 1
+
+SHAP Scatter Plot
+python visualization.py --viz_type shap_scatter_plots --data_dir "artifacts"
+
+SHAP Scatter Plot  for Specific Index (e.g., instance_idx 5)
+python visualization.py --viz_type shap_scatter_plots --data_dir "artifacts" --instance_idx 5
+
