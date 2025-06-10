@@ -38,8 +38,8 @@ phishing-detection/
 ## Setup Instructions
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/Phishing.git
-   cd Phishing
+   git clone https://github.com/your-username/PhishDetect.git
+   cd PhishDetect
    ```
 
 2. **Create a Conda Environment**:
