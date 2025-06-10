@@ -18,6 +18,8 @@ Overview of the proposed framework. The Framework includes  three core phases: (
 ## Repository Structure
 ```
 phishing-detection/
+├── Datasets                   # Datasets utilized in this research
+├── figures                    # Figures
 ├── constants.py               # Configuration constants (e.g., suspicious terms, TLDs)
 ├── utils.py                   # Utility functions for URL processing
 ├── ngram_processing.py        # N-gram feature extraction and selection
