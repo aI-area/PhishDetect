@@ -66,7 +66,7 @@ phishing-detection/
      ```bash
      python visualization.py --viz_type shap_decision_plot --data_dir "artifacts"
 
-     SHAP Decision Plot for Specific Index (e.g., instance_idx 1)
+     #SHAP Decision Plot for Specific Index (e.g., instance_idx 1)
      python visualization.py --viz_type shap_decision_plot --data_dir "artifacts" --instance_idx 1
      ```
 
