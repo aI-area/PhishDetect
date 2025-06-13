@@ -10,8 +10,8 @@ class FocalLossLGBM(LGBMClassifier):
 
     def __init__(
         self,
-        gamma=1.55,       # As in monolithic
-        alpha=0.59,       # As in monolithic
+        gamma=1.55,       
+        alpha=0.59,       
         boosting_type='gbdt',
         num_leaves=50,
         max_depth=-1,
@@ -38,7 +38,7 @@ class FocalLossLGBM(LGBMClassifier):
             'reg_lambda': reg_lambda,
             'verbosity': verbosity,
             'random_state': random_state,
-            'num_class': 1  # Binary classification
+            'num_class': 1  
         }
         kwargs.pop('objective', None)
         params.update(kwargs)
