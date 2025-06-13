@@ -1,7 +1,8 @@
 # Phishing Detection Pipeline
 
 ## Overview
-This repository contains a machine learning pipeline for detecting phishing URLs, as detailed in the paper 'URL-Centric Phishing Detection via Cognitive Lexical Pattern Synthesis, Robust Feature Distillation, and Imbalance-Resilient Ensemble Boosting'. Our framework introduces novel techniques for robust and efficient phishing URL detection tailored for resource-constrained environments like email gateways, browser-level filters, and Internet of Things (IoT) security modules:
+This repository contains a machine learning pipeline for detecting phishing URLs, as detailed in the paper 'A Lightweight and Interpretable Phishing URL Detection Framework for
+Resource-Constrained Environments'. Our framework introduces novel techniques for robust and efficient phishing URL detection tailored for resource-constrained environments like email gateways, browser-level filters, and Internet of Things (IoT) security modules:
 
 ## Framework Architecture
 
