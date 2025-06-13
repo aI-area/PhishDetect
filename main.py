@@ -47,7 +47,7 @@ class PhishingDetector:
         self.predictions_to_save = None
         self.selected_features_indices_to_save = None
 
-    def load_data(self, file_path="dataset/phishstorm.csv"):
+    def load_data(self, file_path="your_path/dataset/PhishFusion.csv"):
          """Load the dataset."""
          try:
              self.logger.info("Loading dataset")
@@ -144,7 +144,7 @@ class PhishingDetector:
             # 3) Extract features for all URLs (handcrafted + selected n-grams)
             features_dataframe = self.extract_features(urls)
 
-            # 4) Split this feature‑matrix into train/val/test once more
+            # 4) Split this feature‑matrix into train/val/test sets
             train_features, temp_features, train_labels, temp_labels = train_test_split(
                 features_dataframe,
                 labels,
@@ -200,8 +200,8 @@ class PhishingDetector:
             # 7) Train Focal‑Loss LightGBM
             self.logger.info("Training Focal Loss LightGBM...")
             model = FocalLossLGBM(
-                gamma=1.16,    # Focus on hard examples
-                alpha=0.65,    # Balance classes
+                gamma=1.21,    # Focus on hard examples
+                alpha=0.42,    # Balance classes
                 boosting_type='gbdt',
                 num_leaves=50,
                 max_depth=-1,
@@ -233,7 +233,7 @@ class PhishingDetector:
             for metric, value in metrics.items():
                 self.logger.info(f"{metric}: {value:.4f}")
 
-            results_file_path = "D:/moba/results.txt"
+            results_file_path = "your_path/results.txt" # Change this to your desired path
             with open(results_file_path, "w") as f:
                 f.write("Test Set Metrics:\n")
                 for metric, value in metrics.items():

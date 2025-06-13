@@ -10,8 +10,8 @@ class FocalLossLGBM(LGBMClassifier):
 
     def __init__(
         self,
-        gamma=1.55,       
-        alpha=0.59,       
+        gamma=1.21,       
+        alpha=0.42,       
         boosting_type='gbdt',
         num_leaves=50,
         max_depth=-1,
